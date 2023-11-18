@@ -1,16 +1,3 @@
-﻿Pcap_DNSProxy Project GitHub page:
-https://github.com/chengr28/Pcap_DNSProxy
-
-Pcap_DNSProxy Project Sourceforge page:
-https://sourceforge.net/projects/pcap-dnsproxy
-
-
-* For more details on the program and configuration, please read ReadMe(..).txt.
-
-  
--------------------------------------------------------------------------------
-
-
 Installation method (using compiled binary executable):
 
 1. Open the downloaded binary executable file, extract the macOS directory to any location on the disk

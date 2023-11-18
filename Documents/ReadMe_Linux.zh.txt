@@ -1,16 +1,3 @@
-﻿Pcap_DNSProxy 项目的 GitHub 页面：
-https://github.com/chengr28/Pcap_DNSProxy
-
-Pcap_DNSProxy 项目的 Sourceforge 页面：
-https://sourceforge.net/projects/pcap-dnsproxy
-
-
-* 更多程序以及配置的详细情况，参见 ReadMe(..).txt
-
-
--------------------------------------------------------------------------------
-
-
 安装方法：
 安装过程比较漫长而且操作比较复杂，请给予一定的耐心按照说明操作！
 

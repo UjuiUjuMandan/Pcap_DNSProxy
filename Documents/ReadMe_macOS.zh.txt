@@ -1,16 +1,3 @@
-﻿Pcap_DNSProxy 项目的 GitHub 页面：
-https://github.com/chengr28/Pcap_DNSProxy
-
-Pcap_DNSProxy 项目的 Sourceforge 页面：
-https://sourceforge.net/projects/pcap-dnsproxy
-
-
-* 更多程序以及配置的详细情况，参见 ReadMe(..).txt
-
-
--------------------------------------------------------------------------------
-
-
 安装方法（使用已编译好的二进制可执行文件）：
 
 1.打开下载的二进制可执行文件包，将 macOS 目录解压到磁盘的任意位置

@@ -3,11 +3,9 @@
 Pcap_DNSProxy, a local DNS server based on WinPcap and LibPcap
 
 ### Releases
-[![GitHub release](https://img.shields.io/github/release/chengr28/Pcap_DNSProxy.svg)](https://github.com/chengr28/Pcap_DNSProxy/releases/latest)
-[![GitHub (pre-)release](https://img.shields.io/github/release/chengr28/Pcap_DNSProxy/all.svg?label=pre-release)](https://github.com/chengr28/Pcap_DNSProxy/releases)
+[![GitHub release](https://img.shields.io/github/release/UjuiUjuMandan/Pcap_DNSProxy.svg)](https://github.com/UjuiUjuMandan/Pcap_DNSProxy/releases/latest)
 
 ### Usage
-**说明文档参见项目 [Documents 文件夹](https://github.com/chengr28/Pcap_DNSProxy/tree/master/Documents) 的内容**
 
 ### Summary
 Pcap_DNSProxy 是一个基于 WinPcap/LibPcap 用于过滤 DNS 投毒污染的工具，提供便捷和强大的包含正则表达式的修改 Hosts 的方法，以及对 DNSCurve/DNSCrypt 协议、并行和 TCP 协议请求的支持。多服务器并行请求功能，更可提高在恶劣网络环境下域名解析的可靠性：
@@ -25,7 +23,7 @@ Pcap_DNSProxy 是一个基于 WinPcap/LibPcap 用于过滤 DNS 投毒污染的�
   * **64位/x64版本：Windows Vista/2008 以及更新的版本**
   * **32位/x86版本：Windows XP SP3/2003 SP2 以及更新的版本**
 * FreeBSD/Linux
-  * 支持 [编译所需依赖包](https://github.com/chengr28/Pcap_DNSProxy/tree/master/Documents) 的 FreeBSD/Linux 版本
+  * 支持 编译所需依赖包 的 FreeBSD/Linux 版本
 * macOS
   * **支持 64 位 Mac OS X 10.8(Mountain Lion) 以及更新的 macOS 版本**
 * OpenWrt/LEDE
