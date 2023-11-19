@@ -1,0 +1,57 @@
+name: Auto build for macOS & Ubuntu
+
+on:
+  push:
+    branches: [ '*' ]
+  pull_request:
+    branches: [ '*' ]
+
+jobs:
+  build-macos:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup CMake and dependencies on macOS
+        run: |
+          brew install cmake libevent libpcap libsodium openssl
+
+      - name: Compile and configure Pcap_DNSProxy
+        run: |
+          cd Source/Auxiliary/Scripts
+          chmod +x CMake_Build.sh
+          # Workaround from https://stackoverflow.com/a/30895165
+          export C_INCLUDE_PATH=/usr/local/include
+          export CPLUS_INCLUDE_PATH=/usr/local/include
+          # Fuck Xcode
+          ./CMake_Build.sh
+
+      - name: Create artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: Pcap_DNSProxy-bin-macOS
+          path: Source/Release/
+
+  build-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup CMake, GCC, and dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gcc g++ cmake libevent-dev libpcap-dev libsodium-dev libssl-dev
+
+      - name: Compile and configure Pcap_DNSProxy
+        run: |
+          cd Source/Auxiliary/Scripts
+          chmod +x CMake_Build.sh
+          ./CMake_Build.sh
+
+      - name: Create artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: Pcap_DNSProxy-bin-Ubuntu
+          path: Source/Release/
