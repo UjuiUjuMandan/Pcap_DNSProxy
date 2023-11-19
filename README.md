@@ -29,6 +29,7 @@ Pcap_DNSProxy is a tool based on WinPcap/LibPcap which can filter DNS poisoning.
   * **64-bit Mac OS X 10.8(Mountain Lion) and later.**
 * OpenWrt/LEDE
   * **Please visit [openwrt-Pcap_DNSProxy project](https://github.com/wongsyrone/openwrt-Pcap_DNSProxy).**
+  * Also have a look at [OpenWrt/LEDE LuCI for Pcap-DNSProxy](https://github.com/muink/luci-app-pcap-dnsproxy/tree/master).
 * Supported types of network devices in capture module
   * Ethernet and Apple IEEE 1394/FireWire in data link layer.
   * IPv4/PPPoE and IPv6/PPPoEv6 in network layer.

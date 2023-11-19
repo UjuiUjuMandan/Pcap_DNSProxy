@@ -28,6 +28,7 @@ Pcap_DNSProxy 是一个基于 WinPcap/LibPcap 用于过滤 DNS 投毒污染的�
   * **支持 64 位 Mac OS X 10.8(Mountain Lion) 以及更新的 macOS 版本**
 * OpenWrt/LEDE
   * **参见 [openwrt-Pcap_DNSProxy 项目](https://github.com/wongsyrone/openwrt-Pcap_DNSProxy)**
+  * 也请参阅 [OpenWrt/LEDE LuCI for Pcap-DNSProxy](https://github.com/muink/luci-app-pcap-dnsproxy/tree/master)
 * 本工具**抓包模块**所支持的网络类型
   * 网络设备类型为 Ethernet 和 Apple IEEE 1394/FireWire 的网络
   * 原生 IPv4/PPPoE 和 IPv6/PPPoEv6 网络
