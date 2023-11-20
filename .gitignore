@@ -1,1 +1,7 @@
-Source/Release
+Release
+Source/.vs
+Source/Dependency
+vcpkg
+*.user
+x64
+x86
