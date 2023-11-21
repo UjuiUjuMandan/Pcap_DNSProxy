@@ -2,6 +2,8 @@
 =====
 Pcap_DNSProxy, a local DNS server based on WinPcap and LibPcap
 
+Forked from [chengr28/Pcap_DNSProxy](https://github.com/chengr28/Pcap_DNSProxy) ([backup](https://github.com/Lyoko-Jeremie/Pcap_DNSProxy))
+
 ### Releases
 [![GitHub release](https://img.shields.io/github/release/UjuiUjuMandan/Pcap_DNSProxy.svg)](https://github.com/UjuiUjuMandan/Pcap_DNSProxy/releases/latest)
 
