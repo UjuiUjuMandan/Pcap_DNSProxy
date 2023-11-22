@@ -1,7 +1,9 @@
 Release
-Source/.vs
+.vs
+.vscode
 Source/Dependency
 vcpkg
 *.user
 x64
 x86
+build
