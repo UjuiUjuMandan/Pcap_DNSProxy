@@ -76,9 +76,9 @@ jobs:
         path: |
           ${{ env.VCPKG_ROOT }}
           ${{ env.VCPKG_ROOT }}\packages
-          ${{ env.VCPKG_ROOT }}\downloads
           !${{ env.VCPKG_ROOT }}\.git
           !${{ env.VCPKG_ROOT }}\buildtrees
+          !${{ env.VCPKG_ROOT }}\downloads
           Source/Tools
         key: |
           ${{ runner.os }}-ncpkg-dependencies-${{ hashFiles('.github/workflows/build.yml') }}
@@ -89,6 +89,10 @@ jobs:
         git clone https://github.com/Microsoft/vcpkg.git
         cd vcpkg
         .\bootstrap-vcpkg.bat
+
+    - name: Intergrate vcpkg with MSBuild
+      run: |
+        cd vcpkg
         .\vcpkg integrate install
 
     - name: Install dependencies with vcpkg
