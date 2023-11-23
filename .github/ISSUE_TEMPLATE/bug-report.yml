@@ -1,0 +1,24 @@
+name: Bug 反馈 / Bug report
+description: 提交一个问题报告 / Create a bug report
+labels:
+  - "bug"
+body:
+  - type: textarea
+    id: version
+    attributes:
+      label: Version / 使用的版本
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Running Environment / 运行环境
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expectation / 期望情况
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual / 实际情况
