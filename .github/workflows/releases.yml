@@ -1,13 +1,14 @@
-name: Build and upload artifacts
+name: Releases
 
 on:
   push:
-    branches: [ '*' ]
-  pull_request:
-    branches: [ '*' ]
+    tags:
+      - "*"
 
 jobs:
   job:
+    permissions:
+        contents: write
     env:
       VCPKG_ROOT: '${{ github.workspace }}\vcpkg'
     name: build-${{ matrix.os }}
@@ -125,8 +126,17 @@ jobs:
           cp Tools/Support/md5.exe Release/Tools/Support
           cp Tools/Support/sed.exe Release/Tools/Support
 
-      - name: Create artifacts
-        uses: actions/upload-artifact@v3
+      - name: Package release
+        uses: thedoctor0/zip-release@0.7.6
         with:
-          name: Pcap_DNSProxy-bin-${{ runner.os }}
-          path: Source/Release/
+          type: '7z'
+          filename: 'Pcap_DNSProxy-${{ github.ref_name }}-bin-${{ runner.os }}.7z'
+          directory: Source
+          path: Pcap_DNSProxy-bin
+          command: 'mkdir Source/Pcap_DNSProxy-bin; mv Source/Release/* Source/Pcap_DNSProxy-bin; cp -r Documents Source/Pcap_DNSProxy-bin'
+
+      - name: Releases
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            Source/Pcap_DNSProxy-${{ github.ref_name }}-bin-${{ runner.os }}.7z
